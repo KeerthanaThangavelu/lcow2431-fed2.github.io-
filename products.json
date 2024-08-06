@@ -1,121 +1,122 @@
 [
     {
         "id": 1,
-        "name": "Product 1",
-        "image": "images/p1.jpg",
-        "price": 10.00
+        "name": "Cuisinart ICE-100",
+        "image": "images/SalesItem1.jpg",
+        "price": 100.00
     },
     {
         "id": 2,
-        "name": "Product 2",
-        "image": "images/p1.jpg",
-        "price": 15.00
+        "name": "Breville Smart Scoop",
+        "image": "images/SalesItem2.jpg",
+        "price": 150.00
     },
     {
         "id": 3,
-        "name": "Product 3",
-        "image": "images/p1.jpg",
-        "price": 20.00
+        "name": "Whynter ICM-201SB",
+        "image": "images/SalesItem3.jpg",
+        "price": 200.00
     },
     {
         "id": 4,
-        "name": "Product 4",
-        "image": "images/p1.jpg",
-        "price": 25.00
+        "name": "Lello 4080 Musso Lussino",
+        "image": "images/SalesItem4.jpg",
+        "price": 125.00
     },
     {
         "id": 5,
-        "name": "Product 5",
-        "image": "images/p1.jpg",
-        "price": 30.00
+        "name": "Nostalgia ICMP400WD",
+        "image": "images/SalesItem5.jpg",
+        "price": 320.00
     },
     {
         "id": 6,
-        "name": "Product 6",
-        "image": "images/p1.jpg",
-        "price": 35.00
+        "name": "Hamilton Beach 68330N",
+        "image": "images/SalesItem6.jpg",
+        "price": 1735.00
     },
     {
         "id": 7,
-        "name": "Product 7",
-        "image": "images/p1.jpg",
-        "price": 40.00
+        "name": "KitchenAid KICA0WH",
+        "image": "images/SalesItem1.jpg",
+        "price": 140.00
     },
     {
         "id": 8,
-        "name": "Product 8",
-        "image": "images/p1.jpg",
-        "price": 45.00
+        "name": "Aicok Ice Cream Maker",
+        "image": "images/SalesItem2.jpg",
+        "price": 245.00
     },
     {
         "id": 9,
-        "name": "Product 9",
-        "image": "images/p1.jpg",
-        "price": 50.00
+        "name": "Yonanas 902 Classic",
+        "image": "images/SalesItem3.jpg",
+        "price": 350.00
     },
     {
         "id": 10,
-        "name": "Product 10",
-        "image": "images/p1.jpg",
-        "price": 55.00
+        "name": "Zoku Ice Cream Maker",
+        "image": "images/SalesItem4.jpg",
+        "price": 855.00
     },
     {
         "id": 11,
-        "name": "Product 11",
-        "image": "images/p1.jpg",
-        "price": 60.00
+        "name": "DeLonghi GM6000",
+        "image": "images/SalesItem5.jpg",
+        "price": 600.00
     },
     {
         "id": 12,
-        "name": "Product 12",
-        "image": "images/p1.jpg",
-        "price": 65.00
+        "name": "Maxi-Matic EIM-520",
+        "image": "images/SalesItem6.jpg",
+        "price": 1650.00
     },
     {
         "id": 13,
-        "name": "Product 13",
-        "image": "images/p1.jpg",
-        "price": 70.00
+        "name": "VonShef Ice Cream Maker",
+        "image": "images/SalesItem1.jpg",
+        "price": 370.00
     },
     {
         "id": 14,
-        "name": "Product 14",
-        "image": "images/p1.jpg",
-        "price": 75.00
+        "name": "Gourmia GSI170",
+        "image": "images/SalesItem2.jpg",
+        "price": 675.00
     },
     {
         "id": 15,
-        "name": "Product 15",
-        "image": "images/p1.jpg",
-        "price": 80.00
+        "name": "Vevor Commercial Ice Cream Machine",
+        "image": "images/SalesItem3.jpg",
+        "price": 880.00
     },
     {
         "id": 16,
-        "name": "Product 16",
-        "image": "images/p1.jpg",
-        "price": 85.00
+        "name": "Waring Pro IC70",
+        "image": "images/SalesItem4.jpg",
+        "price": 815.00
     },
     {
         "id": 17,
-        "name": "Product 17",
-        "image": "images/p1.jpg",
-        "price": 90.00
+        "name": "Cuisinart ICE-21",
+        "image": "images/SalesItem5.jpg",
+        "price": 390.00
     },
     {
         "id": 18,
-        "name": "Product 18",
-        "image": "images/p1.jpg",
-        "price": 95.00
+        "name": "Lello 5030 Pro",
+        "image": "images/SalesItem6.jpg",
+        "price": 1595.00
     },
     {
         "id": 19,
-        "name": "Product 19",
-        "image": "images/p1.jpg",
+        "name": "Ariete Gran Gelato",
+        "image": "images/SalesItem1.jpg",
         "price": 100.00
     },
     {
         "id": 20,
-        "name": "Product 20",
+        "name": "Margaritaville Bahamas",
+        "image": "images/SalesItem2.jpg",
         "price": 105.00
     }
 ]

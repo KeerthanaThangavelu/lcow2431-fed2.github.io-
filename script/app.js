@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateCartCount = () => {
         const cartItems = getDataFromLocalStore();
-        //const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
-        //cartCount.textContent = totalItems;
         cartCount.textContent = cartItems.length;
     };
 
@@ -45,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let productsData = [];
     const taxRate = 0.13;
 
-    fetch('https://mocki.io/v1/0476cd59-7e7b-4cff-a15d-05cd0cc90e25')
+    fetch('products.json')
         .then(response => response.json())
         .then(data => {
-            productsData = data; // Ensure only the first 25 products are displayed
+            productsData = data; 
             displayProducts(productsData);
         });
 
@@ -79,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.onclick = () => {
         const cart = getDataFromLocalStore();
         displayCart(cart);
-        modal.style.display = 'flex'; // Use flex to align center
+        modal.style.display = 'flex'; 
     };
 
     span.onclick = () => {
@@ -93,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     document.getElementById('cart-items').addEventListener('click', event => {
-        if (event.target.classList.contains('delete-icon')) {
-            const productId = event.target.dataset.id;
+        if (event.target.classList.contains('delete-icon') || event.target.closest('.delete-icon')) {
+            const productId = event.target.dataset.id || event.target.closest('.delete-icon').dataset.id;
             removeFromCart(productId);
             updateCartCount();
         }
@@ -138,7 +136,7 @@ function displayCart(cart) {
 
     cartItemsContainer.innerHTML = cart.map(item => `
         <div class="cart-item">
-            <p>${item.name} - $${item.price.toFixed(2)} x ${item.quantity} <span class="delete-icon" data-id="${item.id}">&times;</span></p>
+            <p>${item.name} - $${item.price.toFixed(2)} x ${item.quantity} <span class="delete-icon" data-id="${item.id}"><i class="fas fa-trash"></i></span></p>
         </div>
     `).join('');
 
@@ -156,7 +154,7 @@ function addToCart(product, quantity) {
     const existingItemIndex = cart.findIndex(item => item.id == product.id);
     
     if (existingItemIndex > -1) {
-        cart[existingItemIndex].quantity += quantity;
+        cart[existingItemIndex].quantity = quantity;
     } else {
         cart.push({...product, quantity});
     }
