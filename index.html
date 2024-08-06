@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Line SPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <meta charset="UTF-8">
+    <title>Frozen innovations</title>
+    <link rel="icon" type="" href="images/4.webp"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo2.png" alt="Frozen Innovations Logo" height="100px" width="100px"></a>
+        <h1>FROZEN INNOVATIONS</h1>
+        <button id="cart-button"><i class="fas fa-shopping-cart"></i> View Cart (<span id="cart-count">0</span>)</button>
+    </header>
+    <nav>
+        <ul>
+        <li><a id="home-button">Home</a></li>
+        <li><a id="about-button">About</a></li>
+        <li><a id="product-button">Product</a></li>
+        <li><a id="contact-button">Contact</a> </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <div>
+                <img src="images/Banner.jpg" alt="our machines pic" width="100%" height="auto">
+            </div>                  
+            <p>Welcome to Frozen Innovations.The primary goal of the Frozen Innovations is to establish a leading position in the market for high-quality ice cream maker machines</p>
+            <p>Indulge in the art of frozen delights with Frozen Innovations! We are dedicated to providing top-quality ice cream makers that transform your kitchen into a sweet heaven. Elevate your culinary experience and create delightful memories with our innovative appliances. Start your journey to frozen perfection today!</p>            
+        </section>
+        <section id="product" class="hidden">
+            <div id="products"></div>
+        </section>
+        <section id="about" class="hidden">
+            <section class="company-description">
+                <h2>Welcome to Frozen Innovations</h2>
+                <p>At Frozen Innovations, our mission is to bring joy to every scoop! We specialize in crafting premium ice cream maker machines that turn ordinary moments into extraordinary experiences.</p>
+                <p>Experience the magic of homemade treats with Frozen Innovations! Our commitment to quality and innovation ensures that every frozen creation is a delight for your taste buds. Start your journey to frozen bliss today!</p>
+            </section>
+            <section class="our-story">
+                <div class="text">
+                    <h2>Our Journey</h2>
+                    <p>Established in the heart of our founder's kitchen, Frozen Innovations began as a humble endeavor to revolutionize home ice cream making. Over the years, our passion for frozen delights has grown, leading us to become a trusted name in the industry.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/journey2.jpg" alt="our journey">
+                </div>
+            </section>
+            <section class="reasons-to-shop">
+                <div class="image-container">
+                    <img src="images/whyUs.jpg" alt="why us">
+                </div>
+                <div class="text">
+                    <h2>Why Choose Frozen Innovations?</h2>
+                    <ol>
+                        <li><b>Expert Craftsmanship:</b> Our machines are meticulously designed and engineered for exceptional performance.</li>
+                        <li><b>Unmatched Quality:</b> We use only the finest materials to ensure durability and longevity.</li>
+                        <li><b>Innovative Designs:</b> Stay ahead of the curve with our cutting-edge features and technology.</li>
+                        <li><b>Customer Satisfaction:</b> Your satisfaction is our priority, and we strive to exceed your expectations.</li>
+                        <li><b>Community Impact:</b> A portion of every sale goes towards supporting local charities and initiatives.</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="our-guarantee">
+                <h2>Our Promise</h2>
+                <p>At Frozen Innovations, we stand behind our products with confidence. We guarantee the quality and performance of every ice cream maker machine we sell. <strong>Your satisfaction is our guarantee!</strong></p>
+            </section>
+        </section>
+        <section id="contact" class="hidden">
+            <div id="contact">
+                <h2>Contact us today to schedule your appointment</h2>
+                 <p class="tel-link mobile"><a href="tel:8145559228">(814) 555-9228</p>
+                 <p class="tablet-desktop">(814) 555-9228</p>
+                 <p>Email: <a href=”mailto:mailus@frozeninnovations.com” class="email-link">mailus@frozeninnovations.com</a></p>
+                 <p>We are located at: 150 Hazel St,Ottawa,ON K1S5T8</p>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.071619221586!2d-75.67871692424347!3d45.407895337194404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050f5059252f%3A0x22c3e2d535621f44!2sSaint%20Paul%20University!5e0!3m2!1sen!2sus!4v1711766706596!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <div id="form-container">
+                <h2>Complete the form below and one of our staff members will contact you</h2>
+                <form id="contact-form" class="form-grid" action="#" method="POST">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferred Contact</legend>
+                        <label for="emailcontact"><input type="radio" name="preferredcontact" id="emailcontact" value="emailcontact">Email</label>
+                        <label for="phonecontact"><input type="radio" name="preferredcontact" id="phonecontact" value="phonecontact">Phone</label>
+                        <label for="textcontact"><input type="radio" name="preferredcontact" id="textcontact" value="textcontact">Text</label>
+                        <label for="anycontact"><input type="radio" name="preferredcontact" id="anycontact" value="anycontact">Any</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Best Date for In Person consultation</legend>                            
+                        <label for="best-date">Best Date:</label>
+                        <input type="date" id="best-date" name="best-date">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <textarea id="general-info" name="general-info" rows="3" cols="50"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How did you hear about us?</legend>
+                        <select id="how-heard" name="how-heard">
+                            <option value="--" selected>--</option>
+                            <option value="web-search">Web Search</option>
+                            <option value="friend-word-of-mouth">Friend/Word of Mouth</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+                    <div class="form-buttons">
+                        <button type="submit">Submit Request</button>
+                        <button type="reset">Reset Form</button>
+                    </div>
+                </form>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div>&copy; Copyright 2024. All Rights Reserved.</div>
+        <div>
+            <p>Keerthana Thangavelu</p>
+            <p>C0932267</p>
+        </div>       
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="sub-total"></div>
+            <div id="tax-total"></div>
+            <div id="total-price"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
