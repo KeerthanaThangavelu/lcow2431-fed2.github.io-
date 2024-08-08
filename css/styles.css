@@ -132,6 +132,7 @@ body, header, nav, main, footer, h1, div, img, ul {
 	padding: 0;
 	border: 0;
 }
+
 header {
     position: -webkit-sticky;
     position: sticky;
@@ -214,16 +215,16 @@ main {
 body{
     background-color:lightblue;
     overflow-x: hidden;
-    margin: 0; /* Ensure no extra margin is causing overflow */
-    padding: 0; /* Ensure no extra padding is causing overflow */
+    margin: 0; 
+    padding: 0; 
 }
 
 .container {
-    max-width: 100%; /* Prevent container from exceeding viewport width */
-    overflow: hidden; /* Hide overflow to prevent scroll */
+    max-width: 100%; 
+    overflow: hidden; 
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of items */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .round { 
@@ -257,7 +258,7 @@ footer {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center; /* Center vertically */
+    align-items: center; 
 }
 
 .text h2 {
@@ -278,7 +279,7 @@ footer {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center; /* Center vertically */
+    align-items: center; 
 }
 
 .reasons-to-shop ol {
@@ -464,12 +465,10 @@ footer {
 		display:none;
 	}
 
-	/* Tablet Viewport: STyle rule for header */
 	header { 
 		padding-bottom: 2%;
 	}
 	
-	/* Tablet Viewport: Style rules for nav area */
 	
     nav ul {
         list-style-type: None;
@@ -494,12 +493,15 @@ footer {
         color: #000;
         background-color: #fff;
     }
-	
-	/* Tablet Viewport: Style rules for main content area */
+
 	main ul {
 		margin: 0 0 4% 10%;
 	}
 
+    .product {
+        flex: 1 1 calc(50% - 2em); 
+        width: calc(50% - 2rem);
+    }
 	
 }
 
@@ -568,6 +570,20 @@ footer {
         display: none;
     }
 
+    .product {
+        flex: 1 1 calc(100% - 1em); 
+        width: 100%; 
+        margin: 0.5em 0; 
+    }
+
+    .product img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #products {
+        padding: 0.5em; 
+    }
         
 }
 
